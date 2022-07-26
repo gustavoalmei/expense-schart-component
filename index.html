@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Expenses chart component</title>
+    <link rel="stylesheet" href="./assets/style/reset.css">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="stylesheet" href="./assets/style/header.css">
+    <link rel="stylesheet" href="./assets/style/speding.css">
+    <link rel="stylesheet" href="./assets/style/total.css">
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="balance">
+      <div class="text__balance">
+        <p>My balance</p>
+        <span class="number__balance">$921.48</span>
+      </div>
+      <div class="circles__balance">
+        <div class="circles brown"></div>
+        <div class="circles light"></div>
+      </div>
+    </header>
+    <main class="speding">
+      <div class="container__speding">
+        <p class="text_speding">Spending - Last 7 days</p>
+        <div class="box-graph__speding">
+          <div class="graph__speding">
+            <span class="graph__value">$17.45</span>
+            <div class="bar__graph"></div>
+            <span class="text__graph">mon</span>
+          </div>
+          <div class="graph__speding">
+            <span class="graph__value">$34.91</span>
+            <div class="bar__graph"></div>
+            <span class="text__graph">tue</span>
+          </div>
+          <div class="graph__speding">
+            <span class="graph__value">$52.36</span>
+            <div class="bar__graph"></div>
+            <span class="text__graph">wed</span>
+          </div>
+          <div class="graph__speding">
+            <span class="graph__value">$31.07</span>
+            <div class="bar__graph"></div>
+            <span class="text__graph">thu</span>
+          </div>
+          <div class="graph__speding">
+            <span class="graph__value">$23.39</span>
+            <div class="bar__graph"></div>
+            <span class="text__graph">fri</span>
+          </div>
+          <div class="graph__speding">
+            <span class="graph__value">$43.28</span>
+            <div class="bar__graph"></div>
+            <span class="text__graph">sat</span>
+          </div>
+          <div class="graph__speding">
+            <span class="graph__value">$25.48</span>
+            <div class="bar__graph"></div>
+            <span class="text__graph">sun</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="total__balance">
+        <div class="text__balance">
+          <span>Total this month </span>
+          <span class="value__balance">$478.33</span>
+        </div>
+        <div class="porcentagem__balance">
+          <span class="porcentagem">+2.4% </span>
+          <span>from last month</span>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

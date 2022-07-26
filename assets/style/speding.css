@@ -1,0 +1,126 @@
+main{
+    padding: 2rem 1rem;
+    background-color: var(--very-pale-orange);
+    border-radius: 1rem;
+    max-width: 524px;
+    margin: auto;
+}
+
+.container__speding{
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 3px solid var(--cream);
+}
+
+.container__speding p{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Roboto Mono', monospace; 
+    color: var(--dark-brown);
+    margin-bottom: 2.5rem;
+}
+
+.box-graph__speding{
+    height: 250px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bar__graph{
+    width: 4rem;
+    border-radius: .25rem;
+    margin-bottom: 1rem;
+    background-color: var(--soft-red);
+}
+
+.graph__speding{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.graph__speding:nth-child(1) .bar__graph{
+    height: 20%;
+}
+
+.graph__speding:nth-child(2) .bar__graph{
+    height: 50%;
+}
+
+.graph__speding:nth-child(3) .bar__graph{
+    background-color: var(--cyan);
+    height: 80%;
+}
+
+.graph__speding:nth-child(4) .bar__graph{
+    height: 45%;
+}
+
+.graph__speding:nth-child(5) .bar__graph{
+    height: 30%;
+}
+
+.graph__speding:nth-child(6) .bar__graph{
+    height: 55%;
+}
+
+.graph__speding:nth-child(7) .bar__graph{
+    height: 30%;
+}
+
+.graph__speding:hover{
+    filter: grayscale(50%);
+    transition: filter 250ms ease;
+}
+
+.graph__speding:hover .graph__value{
+    visibility: visible;
+}
+
+.graph__value{
+    width: 100%;
+    height: 2rem;
+    background-color: #313131;
+    border-radius: .5rem;
+    position: relative;
+    top: -5px;
+
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Roboto Mono', monospace; 
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.text__graph{
+    font-family: 'Roboto Mono', monospace; 
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--medium-brown);
+}
+
+@media screen and (max-width:375px) {
+    main{
+        width: 90%;
+    }
+    .container__speding p{
+        font-size: 18px;
+    }
+    .bar__graph{
+        max-width: 1.5rem;
+    }
+    .graph__value{
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .bar__graph{
+        width: 2.5rem;
+    }
+}
