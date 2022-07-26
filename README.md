@@ -1,6 +1,6 @@
 # Frontend Mentor - Expenses chart component
 
-## Mais um desafio concluído
+Mais um desafio concluído
 
 ## Foram usados:
 - HTML
